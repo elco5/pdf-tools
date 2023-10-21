@@ -1,0 +1,30 @@
+PERFORMANCE OBSERVATIONS
+breaker_tripped:  Yes
+breaker_reset:  Yes
+breaker_continuity:  Yes
+enclosure_fuse_open:  No
+
+ANALYSIS RESULTS TABLE
+closing_angle:  4 Deg.
+closing_time:  205.6 µ Sec
+peak_current:  10.43 k Amps
+time_to_peak_current:  3.253 m Sec
+I_sqared_t:  304.3 k Amp^2sec
+I_duration:  7.283 m Sec
+Test Device: Sq D 22k/ Siemens125
+Sample:  7
+Oscillogram:   HPL3-77443
+Date of Test:  10/5/2023
+Time of Test:   10:19:44 AM
+
+AVAILABLE CIRCUIT CHARACTERISTICS
+Osc. No: 57423
+Calibration Date: 10/20/202
+OCV:  244  V  
+Rms Sym Current:  25.5 kA
+Power Factor: 15%
+ HPL3-77443  
+COMMENT SECTION
+Main & Branch BreakerTripped
+GRID ON
+INVESTIGATION

@@ -1,0 +1,29 @@
+PERFORMANCE OBSERVATIONS
+breaker_tripped:  Yes
+breaker_reset:  Yes
+breaker_continuity:  Yes
+enclosure_fuse_open:  No
+
+ANALYSIS RESULTS TABLE
+closing_angle:  7 Deg.
+closing_time:  314.1 µ Sec
+peak_current:  9.844 k Amps
+time_to_peak_current:  3.420 m Sec
+I_sqared_t:  310.1 k Amp^2sec
+I_duration:  7.495 m Sec
+Test Device: Eaton BWH 25k/ Siemens125
+Sample:  9
+Oscillogram:   HPL3-77444
+Date of Test:  10/5/2023
+Time of Test:   10:40:53 AM
+
+AVAILABLE CIRCUIT CHARACTERISTICS
+Osc. No: 60256
+Calibration Date: 2/10/2023OCV =  242  V  
+Rms Sym Current:  22.37 kA
+Power Factor: 19%
+ HPL3-77444  
+COMMENT SECTION
+Main & Branch BreakerTripped
+GRID ON
+INVESTIGATION

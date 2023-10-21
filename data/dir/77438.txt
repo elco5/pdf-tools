@@ -1,0 +1,30 @@
+PERFORMANCE OBSERVATIONS
+breaker_tripped:  Yes
+breaker_reset:  Yes
+breaker_continuity:  Yes
+enclosure_fuse_open:  No
+
+ANALYSIS RESULTS TABLE
+closing_angle:  6 Deg.
+closing_time:  268.3 µ Sec
+peak_current:  12.08 k Amps
+time_to_peak_current:  4.218 m Sec
+I_sqared_t:  549.0 k Amp^2sec
+I_duration:  7.576 m Sec
+Test Device: Eaton 10kA MAIN w/ Eaton 125
+Sample:  3B
+Oscillogram:   HPL3-77438
+Date of Test:  10/5/2023
+Time of Test:   9:47:54 AM
+
+AVAILABLE CIRCUIT CHARACTERISTICS
+Osc. No: 57423
+Calibration Date: 10/20/202
+OCV:  244  V  
+Rms Sym Current:  25.5 kA
+Power Factor: 15%
+ HPL3-77438  
+COMMENT SECTION
+Main & Branch BreakerTripped
+GRID ON, NEW DOOR
+INVESTIGATION
