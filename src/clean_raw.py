@@ -44,6 +44,7 @@ def clean_up_output(dirty_directory_path, clean_directory_path, replacements):
 # Specify the directory path where the text files are located
 dirty_directory_path = r"C:\Users\ecountrywood\dev\tools\pdf_tools\data\raw_outputs"
 clean_directory_path = r"C:\Users\ecountrywood\dev\tools\pdf_tools\data\clean_outputs"
+
 # Call the function to make replacements
 clean_up_output(dirty_directory_path=dirty_directory_path,
                 clean_directory_path = clean_directory_path,

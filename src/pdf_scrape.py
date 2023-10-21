@@ -8,7 +8,7 @@ output_directory = r'C:\Users\ecountrywood\dev\tools\pdf_tools\data\raw_outputs'
 for filename in os.listdir(pdf_directory):
     if filename.endswith('.pdf'):
         pdf_file_path = os.path.join(pdf_directory, filename)
-        print("processing:  ", pdf_file_path)
+        # print("processing:  ", pdf_file_path)
         output_text_file = os.path.splitext(filename)[0] + '.txt'  # Create a corresponding text file
 
         # Specify the full path for the output text file

@@ -40,5 +40,3 @@ line_removal_target_words = ["Voltage",
                                 
                                 ]
                                 
-# Specify the directory path where the text files are located
-directory_path = r"C:\Users\ecountrywood\dev\tools\pdf_tools\replace_dir\output"
