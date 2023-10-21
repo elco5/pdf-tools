@@ -12,16 +12,16 @@ time_to_peak_current:  4.309 m Sec
 I_sqared_t:  209.1 k Amp^2sec
 I_duration:  7.821 m Sec
 Test Device: Square D 22kA/ Siemens 125
-Sample:  15
-Oscillogram:   HPL3-77456   OCV = 240 V
+sample:  15
+oscillogram:   HPL3-77456   OCV = 240 V
 Date of Test:  10/5/2023
-Time of Test:   11:45:17 AM
+time_of_test:   11:45:17 AM
 
 AVAILABLE CIRCUIT CHARACTERISTICS
 Osc. No: 59187
-Calibration Date: 1/11/2023OCV =  240  V  
-Rms Sym Current:  10.12 kA
-Power Factor: 49%
+calibration_ate: 1/11/2023OCV =  240  V  
+rms_sym_current:  10.12 kA
+power_factor: 49%
  HPL3-77456  
 COMMENT SECTION
 Main & Branch BreakerTripped

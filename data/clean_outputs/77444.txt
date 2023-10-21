@@ -12,16 +12,16 @@ time_to_peak_current:  3.420 m Sec
 I_sqared_t:  310.1 k Amp^2sec
 I_duration:  7.495 m Sec
 Test Device: Eaton BWH 25k/ Siemens125
-Sample:  9
-Oscillogram:   HPL3-77444
+sample:  9
+oscillogram:   HPL3-77444
 Date of Test:  10/5/2023
-Time of Test:   10:40:53 AM
+time_of_test:   10:40:53 AM
 
 AVAILABLE CIRCUIT CHARACTERISTICS
 Osc. No: 60256
-Calibration Date: 2/10/2023OCV =  242  V  
-Rms Sym Current:  22.37 kA
-Power Factor: 19%
+calibration_ate: 2/10/2023OCV =  242  V  
+rms_sym_current:  22.37 kA
+power_factor: 19%
  HPL3-77444  
 COMMENT SECTION
 Main & Branch BreakerTripped

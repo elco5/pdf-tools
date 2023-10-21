@@ -12,17 +12,17 @@ time_to_peak_current:  3.265 m Sec
 I_sqared_t:  328.7 k Amp^2sec
 I_duration:  7.260 m Sec
 Test Device: Sq D 22k/ Eaton125
-Sample:  6
-Oscillogram:   HPL3-77442
+sample:  6
+oscillogram:   HPL3-77442
 Date of Test:  10/5/2023
-Time of Test:   10:12:56 AM
+time_of_test:   10:12:56 AM
 
 AVAILABLE CIRCUIT CHARACTERISTICS
 Osc. No: 57423
-Calibration Date: 10/20/202
+calibration_ate: 10/20/202
 OCV:  244  V  
-Rms Sym Current:  25.5 kA
-Power Factor: 15%
+rms_sym_current:  25.5 kA
+power_factor: 15%
  HPL3-77442  
 COMMENT SECTION
 Main & Branch BreakerTripped

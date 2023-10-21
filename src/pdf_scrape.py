@@ -1,13 +1,14 @@
 import PyPDF2
 import os
 print("running..")
-pdf_directory = r'C:\Users\ecountrywood\dev\tools\pdf_tools\data'  # Replace with the path to your directory of PDF files
-output_directory = r'C:\Users\ecountrywood\dev\tools\pdf_tools\output'  # Replace with the path to the directory where you want to save text files
+pdf_directory = r'C:\Users\ecountrywood\dev\tools\pdf_tools\data\pdf_inputs'  # Replace with the path to your directory of PDF files
+output_directory = r'C:\Users\ecountrywood\dev\tools\pdf_tools\data\raw_outputs'  # Replace with the path to the directory where you want to save text files
 
 # Iterate over all PDF files in the specified directory
 for filename in os.listdir(pdf_directory):
     if filename.endswith('.pdf'):
         pdf_file_path = os.path.join(pdf_directory, filename)
+        print("processing:  ", pdf_file_path)
         output_text_file = os.path.splitext(filename)[0] + '.txt'  # Create a corresponding text file
 
         # Specify the full path for the output text file

@@ -12,16 +12,16 @@ time_to_peak_current:  3.574 m Sec
 I_sqared_t:  333.0 k Amp^2sec
 I_duration:  7.854 m Sec
 Test Device: Eaton 10kA/ Square D 125
-Sample:  12
-Oscillogram:   HPL3-77450
+sample:  12
+oscillogram:   HPL3-77450
 Date of Test:  10/5/2023
-Time of Test:   11:15:13 AM
+time_of_test:   11:15:13 AM
 
 AVAILABLE CIRCUIT CHARACTERISTICS
 Osc. No: 60256
-Calibration Date: 2/10/2023OCV =  242  V  
-Rms Sym Current:  22.37 kA
-Power Factor: 19%
+calibration_ate: 2/10/2023OCV =  242  V  
+rms_sym_current:  22.37 kA
+power_factor: 19%
  HPL3-77450  
 COMMENT SECTION
 Main & Branch BreakerTripped
