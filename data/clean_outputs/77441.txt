@@ -11,7 +11,11 @@ peak_current:  10.81 k Amps
 time_to_peak_current:  3.200 m Sec
 I_sqared_t:  343.3 k Amp^2sec
 I_duration:  7.378 m Sec
-Test Device: Eaton BWH 25kA MAIN w/ Siemens 125
+main_brand: Eaton BWH
+main_aisc_ka: 25
+branch_brand: Siemens
+branch_rating: 125
+
 sample:  5
 oscillogram:   HPL3-77441
 Date of Test:  10/5/2023

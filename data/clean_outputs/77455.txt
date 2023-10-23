@@ -11,7 +11,11 @@ peak_current:  8.713 k Amps
 time_to_peak_current:  4.597 m Sec
 I_sqared_t:  281.5 k Amp^2sec
 I_duration:  8.507 m Sec
-Test Device: Square D 22kA/ Eaton 125
+main_brand: Square D
+main_aisc_ka: 22
+branch_brand: Eaton
+branch_rating: 125
+
 sample:  14
 oscillogram:   HPL3-77455   OCV = 240 V
 Date of Test:  10/5/2023

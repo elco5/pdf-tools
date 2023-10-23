@@ -11,7 +11,11 @@ peak_current:  12.09 k Amps
 time_to_peak_current:  4.755 m Sec
 I_sqared_t:  597.0 k Amp^2sec
 I_duration:  8.183 m Sec
-Test Device: Eaton 10kA/ Eaton125
+main_brand: Eaton
+main_aisc_ka: 10
+branch_brand: Eaton
+branch_rating: 125
+
 sample:  10
 oscillogram:   HPL3-77448
 Date of Test:  10/5/2023

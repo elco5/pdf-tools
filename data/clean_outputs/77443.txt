@@ -11,7 +11,11 @@ peak_current:  10.43 k Amps
 time_to_peak_current:  3.253 m Sec
 I_sqared_t:  304.3 k Amp^2sec
 I_duration:  7.283 m Sec
-Test Device: Sq D 22k/ Siemens125
+main_brand: Sq D
+main_aisc_ka: 22
+branch_brand: Siemens
+branch_rating: 125
+
 sample:  7
 oscillogram:   HPL3-77443
 Date of Test:  10/5/2023

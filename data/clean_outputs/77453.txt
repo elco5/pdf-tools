@@ -11,7 +11,11 @@ peak_current:  7.443 k Amps
 time_to_peak_current:  4.249 m Sec
 I_sqared_t:  183.2 k Amp^2sec
 I_duration:  8.083 m Sec
-Test Device: Eaton CSR 25kA/ Siemens 125
+main_brand: Eaton CSR
+main_aisc_ka: 25
+branch_brand: Siemens
+branch_rating: 125
+
 sample:  17
 oscillogram:   HPL3-77453   OCV = 240 V
 Date of Test:  10/5/2023

@@ -11,7 +11,11 @@ peak_current:  8.472 k Amps
 time_to_peak_current:  4.917 m Sec
 I_sqared_t:  271.7 k Amp^2sec
 I_duration:  8.748 m Sec
-Test Device: Eaton CSR 25kA/ Eaton 125
+main_brand: Eaton CSR
+main_aisc_ka: 25
+branch_brand: Eaton
+branch_rating: 125
+
 sample:  16
 oscillogram:   HPL3-77454   OCV = 240 V
 Date of Test:  10/5/2023
