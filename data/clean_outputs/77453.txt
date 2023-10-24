@@ -2,22 +2,20 @@ breaker_tripped:  Yes
 breaker_reset:  Yes
 breaker_continuity:  Yes
 enclosure_fuse_open:  No
-closing_angle:  3 Deg.
-closing_time:  157.4 µ Sec
-peak_current:  7.443 k Amps
-time_to_peak_current:  4.249 m Sec
-i_2_t:  183.2 k Amp^2sec
-i_duration:  8.083 m Sec
+closing_angle(deg):  3 Deg.
+closing_time(us):  157.4 µ Sec
+peak_current(kA):  7.443 k Amps
+time_to_peak_current(ms):  4.249 m Sec
+i_sq_t(k):  183.2 k Amp^2sec
+i_duration(ms):  8.083 m Sec
 main_brand: Eaton CSR
 main_aisc_ka: 25
 branch_brand: Siemens
 branch_rating: 125
-
 sample:  17
-oscillogram:   HPL3-77453   OCV = 240 V
+oscillogram:   HPL3-77453 
 test_date:   10/5/2023
 time_of_test:   11:31:15 AM
- 59187
 calibration_date: 1/11/2023OCV =  240  V  
 grid_rms_sym_current:  10.12 kA
 power_factor: 49%

@@ -2,22 +2,20 @@ breaker_tripped:  Yes
 breaker_reset:  Yes
 breaker_continuity:  Yes
 enclosure_fuse_open:  No
-closing_angle:  3 Deg.
-closing_time:  141.9 µ Sec
-peak_current:  10.53 k Amps
-time_to_peak_current:  3.574 m Sec
-i_2_t:  333.0 k Amp^2sec
-i_duration:  7.854 m Sec
+closing_angle(deg):  3 Deg.
+closing_time(us):  141.9 µ Sec
+peak_current(kA):  10.53 k Amps
+time_to_peak_current(ms):  3.574 m Sec
+i_sq_t(k):  333.0 k Amp^2sec
+i_duration(ms):  7.854 m Sec
 main_brand: Eaton
 main_aisc_ka: 10
 branch_brand: Square D
 branch_rating: 125
-
 sample:  12
-oscillogram:   HPL3-77450
+oscillogram:   HPL3-77450 
 test_date:   10/5/2023
 time_of_test:   11:15:13 AM
- 60256
 calibration_date: 2/10/2023OCV =  242  V  
 grid_rms_sym_current:  22.37 kA
 power_factor: 19%

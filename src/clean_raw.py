@@ -54,7 +54,12 @@ def parse_test_device(original_text):
 
             # Update the test_device dictionary with extracted values
             if main_brand:
-                test_device["main"]["brand"] = main_brand.group().strip()
+                mb = main_brand.group().strip()
+                if mb.lower() in ["sq d","square d"]: 
+                    mb = "Square D"                    
+                if mb.lower() in ["schneider", "schnieder"]:
+                    mb = "Schneider"
+                test_device["main"]["brand"] = mb
 
             if main_aisc_ka:
                 test_device["main"]["aisc_ka"] = main_aisc_ka.group(1)
