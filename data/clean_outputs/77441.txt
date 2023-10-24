@@ -1,16 +1,13 @@
-PERFORMANCE OBSERVATIONS
 breaker_tripped:  Yes
 breaker_reset:  Yes
 breaker_continuity:  Yes
 enclosure_fuse_open:  No
-
-ANALYSIS RESULTS TABLE
 closing_angle:  4 Deg.
 closing_time:  200.3 µ Sec
 peak_current:  10.81 k Amps
 time_to_peak_current:  3.200 m Sec
-I_sqared_t:  343.3 k Amp^2sec
-I_duration:  7.378 m Sec
+i_2_t:  343.3 k Amp^2sec
+i_duration:  7.378 m Sec
 main_brand: Eaton BWH
 main_aisc_ka: 25
 branch_brand: Siemens
@@ -18,17 +15,11 @@ branch_rating: 125
 
 sample:  5
 oscillogram:   HPL3-77441
-Date of Test:  10/5/2023
+test_date:   10/5/2023
 time_of_test:   10:03:38 AM
-
-AVAILABLE CIRCUIT CHARACTERISTICS
-Osc. No: 57423
-calibration_ate: 10/20/202
+ 57423
+calibration_date: 10/20/202
 OCV:  244  V  
-rms_sym_current:  25.5 kA
+grid_rms_sym_current:  25.5 kA
 power_factor: 15%
- HPL3-77441  
-COMMENT SECTION
 Main & Branch BreakerTripped
-GRID ON, NEW DOOR
-INVESTIGATION

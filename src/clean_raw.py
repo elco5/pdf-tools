@@ -112,6 +112,7 @@ def clean_up_output(dirty_directory_path, clean_directory_path, replacements):
                 original_text = original_text.replace(old_word, new_word)
 
             updated_original_text = parse_test_device(original_text)
+            # updated_original_text = original_text
 
             # create new filepath for the modified text
             cleaned_file_path = os.path.join(clean_directory_path, filename)

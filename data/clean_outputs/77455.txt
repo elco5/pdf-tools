@@ -1,16 +1,13 @@
-PERFORMANCE OBSERVATIONS
 breaker_tripped:  Yes
 breaker_reset:  Yes
 breaker_continuity:  Yes
 enclosure_fuse_open:  No
-
-ANALYSIS RESULTS TABLE
 closing_angle:  5 Deg.
 closing_time:  221.5 µ Sec
 peak_current:  8.713 k Amps
 time_to_peak_current:  4.597 m Sec
-I_sqared_t:  281.5 k Amp^2sec
-I_duration:  8.507 m Sec
+i_2_t:  281.5 k Amp^2sec
+i_duration:  8.507 m Sec
 main_brand: Square D
 main_aisc_ka: 22
 branch_brand: Eaton
@@ -18,16 +15,10 @@ branch_rating: 125
 
 sample:  14
 oscillogram:   HPL3-77455   OCV = 240 V
-Date of Test:  10/5/2023
+test_date:   10/5/2023
 time_of_test:   11:41:27 AM
-
-AVAILABLE CIRCUIT CHARACTERISTICS
-Osc. No: 59187
-calibration_ate: 1/11/2023OCV =  240  V  
-rms_sym_current:  10.12 kA
+ 59187
+calibration_date: 1/11/2023OCV =  240  V  
+grid_rms_sym_current:  10.12 kA
 power_factor: 49%
- HPL3-77455  
-COMMENT SECTION
 Main & Branch BreakerTripped
-GRID ON
-INVESTIGATION
