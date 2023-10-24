@@ -1,6 +1,7 @@
 # my ignores
 data/raw_outputs/*
 data/clean_outputs/*
+data/pdf_inputs/*
 
 # Byte-compiled / optimized / DLL files
 *__pycache__/*
