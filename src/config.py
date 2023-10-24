@@ -85,6 +85,8 @@ use_raw_column_data = [
 ]
 
 # Specify the directory path where the text files are located
+pdf_directory = r'C:\Users\ecountrywood\dev\tools\pdf_tools\data\pdf_inputs'  # Replace with the path to your directory of PDF files
+raw_output_directory = r'C:\Users\ecountrywood\dev\tools\pdf_tools\data\raw_outputs'  # Replace with the path to the directory where you want to save text files
 dirty_directory_path = r"C:\Users\ecountrywood\dev\tools\pdf_tools\data\raw_outputs"
 clean_directory_path = r"C:\Users\ecountrywood\dev\tools\pdf_tools\data\clean_outputs"
 results_directory_path = r"C:\Users\ecountrywood\dev\tools\pdf_tools\data\results"
