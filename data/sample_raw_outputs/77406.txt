@@ -1,0 +1,55 @@
+C:\Users\ecountrywood\dev\tools\pdf_tools\data\pdf_inputs\10kA\77406.pdf
+Voltage 1.0 kVolts
+-1.0 kVolts 800.0  Volts
+ 600.0  
+ 400.0   200.0  
+ 0.0  
+-200.0  -400.0  -600.0  
+-800.0  Volts
+Current 12.0 kAmps
+-12.0 kAmps 10.0 kAmps
+ 7.5 k
+ 5.0 k 2.5 k
+ 0.0  
+-2.5 k-5.0 k-7.5 k
+-10.0 kAmps
+Sweep#: 1 10.00 ms 15.00 ms 20.00 ms 25.00 ms 30.00 ms 35.00 ms 40.00 msVoltage 1.0 kVolts
+-1.0 kVolts
+Current 12.0 kAmps
+-12.0 kAmps
+Sweep#: 1 000.0 ms 040.0 ms 080.0 ms 120.0 ms 160.0 ms
+High Power Laboratory, HPL3 Fac ility
+Cedar Rapids , Iowa, USA
+Performance Observations
+Was the Breaker Tripped after the test? Yes
+Could the Breaker be Reset? Yes
+Did it have continuity in all poles? Yes
+Was the Enclosure Fuse Opened? NoANALYSIS RESULTS TABLE
+Closing Angle 223 Deg.
+Closing time  (V0)+ 10.33 m Sec
+Peak Current (Ip) -9.036 k Amps
+Time to Ip 3.059 m Sec
+I2T 245.5 k Amp^2sec
+I Duration 6.845 m Sec
+Current 480.0  Amps
+-9.52 kAmps-1.0 kAmps
+-2.0 k
+-3.0 k-4.0 k
+-5.0 k
+-6.0 k-7.0 k
+-8.0 kAmps
+Sweep#: 1 .00 ms 20.00 ms 24.00 ms 28.00 ms 32.00 msProject No.: 6000001332  TestFlow No.: TESLA
+Test Device: Eaton 10kA MAIN w/ Siemens 125 BranchSample No.: Test 7Oscillogram No.:  HPL3-77406   OCV = 240 V
+Date of Test: 10/4/2023  Time of Test:  9:56:25 AM
+AVAILABLE CIRCUIT CHARACTERISTICS:
+Osc. No: 59187  Calibration Date: 1/11/2023OCV =  240  V   Rms Sym Current = 10.12 kAPower Factor = 49%
+OSC. NO.: HPL3-77406  Comment Section
+MAIN &  Branch Tripped    
+"CO" to Branch
+Intertek Witness: Dipesh Patel
+INSTRUMENTATION DATA
+Data Recording System:HBM GEN3T C/N 063-163
+Voltage "A":100X Scope Probe, C/N 131-554, 1% PLOT FILE HPL3 CR_1_M
+Current "A":Rogowski CT Coil, C/N 045-444
+NOTE: Channel offset removed for analysis,
+           but not for display.TOTAL VIEWAnalysis results are based on this data

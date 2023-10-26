@@ -1,0 +1,17 @@
+C:\Users\ecountrywood\dev\tools\pdf_tools\data\pdf_inputs\exploratory\77456.pdf
+breaker_tripped:  Yes
+breaker_reset:  Yes
+breaker_continuity:  Yes
+enclosure_fuse_open:  No
+closing_angle(deg):  5 Deg.
+closing_time(us):  233.6 µ Sec
+peak_current(kA):  8.213 k Amps
+time_to_peak_current(ms):  4.309 m Sec
+i_sq_t(k):  209.1 k Amp^2sec
+i_duration(ms):  7.821 m Sec
+Test Device: Square D 22kA/ Siemens 125
+sample:  15
+oscillogram:   HPL3-77456 
+test_date:   10/5/2023
+time_of_test:   11:45:17 AM
+Main & Branch BreakerTripped

@@ -1,3 +1,25 @@
+
+# remove lines beginning with these words / strings
+line_removal_target_words = ["Voltage",
+                             "Current",
+                             "High",
+                             " ",
+                             "-",
+                             "\n",
+                             "Sweep#",
+                             "Cedar",
+                             "NOTE",
+                             "Data",
+                             "INSTRUMENTATION",
+                             "Performance",
+                             "ANALYSIS",
+                             "AVAILABLE",
+                             "GRID",
+                             "INVESTIGATION",
+                             "OSC",
+
+                             ]
+
 # Define the dictionary of word replacements
 replacements = {
     "Was the Breaker Tripped after the test?": "breaker_tripped: ",
@@ -27,28 +49,7 @@ replacements = {
     " Comment Section": "\nComments: ",
     # Add more word replacements as needed
 }
-
-# remove lines beginning with these words / strings
-line_removal_target_words = ["Voltage",
-                             "Current",
-                             "High",
-                             " ",
-                             "-",
-                             "\n",
-                             "Sweep#",
-                             "Cedar",
-                             "NOTE",
-                             "Data",
-                             "INSTRUMENTATION",
-                             "Performance",
-                             "ANALYSIS",
-                             "AVAILABLE",
-                             "GRID",
-                             "INVESTIGATION",
-                             "OSC",
-
-                             ]
-
+closing_angle = "closing_angle(deg)"
 columns = [
     "test_date",
     "time_of_test",
@@ -61,7 +62,7 @@ columns = [
     "peak_current(kA)",
     "time_to_peak_current(ms)",
     "i_sq_t(k)",
-    "closing_angle(deg)",
+    closing_angle,
     "power_factor",
     "i_duration(ms)",
     "oscillogram",
