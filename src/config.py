@@ -54,7 +54,7 @@ columns = [
     "time_of_test",
     "grid_rms_sym_current",
     "main_brand",
-    "main_aisc_ka",
+    "main_rating",
     "branch_brand",
     "branch_rating",
     "closing_time(us)",

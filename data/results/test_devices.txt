@@ -13,6 +13,24 @@ Test Device: Eaton125 Branch
 Test Device: Eaton125 Branch
 Test Device: Square D 125 Branch
 Test Device: Square D 125 Branch
+Test Device: Square D 22kA MAIN w/ EATON 125 Branch
+Test Device: Square D 22kA MAIN w/ EATON 125 Branch
+Test Device: Square D 22kA MAIN w/ EATON 125 Branch
+Test Device: Square D 22kA MAIN w/ SIEMENS 125 Branch  
+Test Device: Square D 22kA MAIN w/ SIEMENS 125 Branch
+Test Device: Square D 22kA MAIN w/ SIEMENS 125 Branch
+Test Device: Eaton CSR 25kA MAIN w/ EATON 125 Branch
+Test Device: Eaton CSR 25kA MAIN w/ EATON 125 Branch
+Test Device: Eaton CSR 25kA MAIN w/ EATON 125 Branch
+Test Device: Eaton CSR 25kA MAIN w/ SIEMENS 125 Branch
+Test Device: Eaton CSR 25kA MAIN w/ SIEMENS 125 Branch
+Test Device: Eaton CSR 25kA MAIN w/ SIEMENS 125 Branch
+Test Device: Eaton BWH 25kA MAIN w/ EATON 125 Branch
+Test Device: Eaton BWH 25kA MAIN w/ EATON 125 Branch
+Test Device: Eaton BWH 25kA MAIN w/ EATON 125 Branch
+Test Device: Eaton BWH 25kA MAIN w/ SIEMENS 125 Branch
+Test Device: Eaton BWH 25kA MAIN w/ SIEMENS 125 Branch
+Test Device: Eaton BWH 25kA MAIN w/ SIEMENS 125 Branch
 Test Device: Eaton 10kA MAIN w/ Square D 125
 Test Device: Eaton 10kA MAIN w/ Siemens 125
 Test Device: Eaton 10kA MAIN w/ Eaton 125

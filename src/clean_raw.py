@@ -40,7 +40,7 @@ def clean_up_output(dirty_directory_path, clean_directory_path, replacements):
             file_path = os.path.join(dirty_directory_path, filename)
 
             # Read the file
-            print("reading file:  ", file_path)
+            # print("reading file:  ", file_path)
             with open(file_path, 'r') as file:
                 lines = file.readlines()
 
