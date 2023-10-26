@@ -1,0 +1,19 @@
+C:\Users\ecountrywood\dev\tools\pdf_tools\data\pdf_inputs\22kA\77415.pdf
+breaker_tripped:  Yes
+breaker_reset:  Yes
+breaker_continuity:  Yes
+enclosure_fuse_open:  No
+closing_angle(deg):  159 Deg.
+closing_time(us):  7.380 m Sec
+peak_current(kA):  -13.43 k Amps
+time_to_peak_current(ms):  5.304 m Sec
+i_sq_t(k):  657.3 k Amp^2sec
+i_duration(ms):  9.068 m Sec
+Test Device: Square D 22kA MAIN w/ EATON 125 Branch
+sample:  Test 19
+oscillogram:   HPL3-77415   OCV = 242 V
+test_date:  10/4/2023
+time_of_test:   12:01:24 PM
+Main &  Branch BreakerTripped 
+'CO" to Branch Breaker
+Intertek Witness: Dipesh Patel
