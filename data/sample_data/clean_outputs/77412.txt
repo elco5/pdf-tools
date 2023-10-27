@@ -4,15 +4,22 @@ breaker_reset:  Yes
 breaker_continuity:  Yes
 enclosure_fuse_open:  No
 closing_angle(deg):  4 Deg.
-closing_time(us):  206.1 µ Sec
+closing_time(ms): 0.2061
 peak_current(kA):  11.62 k Amps
-time_to_peak_current(ms):  5.363 m Sec
-i_sq_t(k):  534.2 k Amp^2sec
-i_duration(ms):  9.467 m Sec
-Test Device: Eaton125 Branch
+time_to_peak_current(ms): 5.363
+i_sq_t(kAsqSec):  534.2 k Amp^2sec
+i_duration(ms): 9.467
+main_brand: Eaton
+main_rating: 125
+branch_brand: Eaton
+branch_rating: 125
 sample:  Test 12
-oscillogram:   HPL3-77412 
+oscillogram: HPL3-77412
 test_date:  10/4/2023
 time_of_test:   10:31:22 AM
+Osc. No: 59187
+calibration_date: 1/11/2023OCV =  240  V  
+grid_rms_sym_current:  10.12 kA
+power_factor: 49%
 No MAIN,  Branch Tripped  
 Intertek Witness: Dipesh Patel

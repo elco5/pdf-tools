@@ -2,7 +2,7 @@ import re
 import os
 
 
-def test_device_parser_old(line):
+def test_device_parser(line):
     '''
     Takes in a line in the form:
     Test Device: Eaton 10kA MAIN w/ Siemens 125 Branch
@@ -50,70 +50,6 @@ def test_device_parser_old(line):
     return output
 
 
-def test_device_parser(line):
-    '''
-    Takes in a line in the form:
-    Test Device: Eaton 10kA MAIN w/ Siemens 125 Branch
-    returns:
-    main_brand: Eaton
-    main_rating: 10
-    branch_brand: Siemens
-    branch_rating: 125
-    '''
-
-    # Initialize variables with default values
-    main_brand = "N/A"
-    main_rating = "N/A"
-    branch_brand = "N/A"
-    branch_rating = "N/A"
-
-    # Split the line and extract the parts
-    parts = line.split(':')
-    if len(parts) > 1:
-        device_info = parts[1].strip()
-        device_parts = device_info.split('/')
-        
-        if len(device_parts) >= 1:
-            main_part = device_parts[0].strip()
-            branch_part = device_parts[-1].strip()
-                        
-            brand_mappings = {
-                "siemens": "Siemens",
-                "sq d": "Square D",
-                "square d": "Square D",
-                "eaton": "Eaton"
-            }
-
-            # Extract main_brand
-            main_brand_match = re.search(r'[^0-9]+', main_part)
-            if main_brand_match:
-                main_brand = main_brand_match.group().strip()
-                # Use the mapping if the brand is found in the dictionary
-                main_brand = brand_mappings.get(main_brand.lower(), main_brand)
-
-      
-            # Extract main_rating
-            main_rating_match = re.search(r'(\d+)', main_part)
-            if main_rating_match:
-                main_rating = main_rating_match.group().strip()
-
-
-        # Extract branch_brand
-        branch_brand_match = re.search(r'[^0-9]+', branch_part)
-        if branch_brand_match:
-            branch_brand = branch_brand_match.group().strip()
-        
-        # Extract branch_rating
-        branch_rating_match = re.search(r'(\d+)', branch_part)
-        if branch_rating_match:
-            branch_rating = branch_rating_match.group().strip()
-
-    output = f"main_brand: {main_brand}\nmain_rating: {main_rating}\nbranch_brand: {branch_brand}\nbranch_rating: {branch_rating}\n"
-    
-    return output
-
-
-
 def oscillogram_parser(line):
     '''
     for lines of the form
@@ -154,15 +90,6 @@ def value_parser(line):
 
 
 def run_parser(clean_directory_path):
-    # Create a dictionary that maps prefixes to parser functions
-    parser_functions = {
-        "Test Device:": test_device_parser,
-        "oscillogram:": oscillogram_parser,
-        "closing_time": value_parser,
-        "time_to_peak_current": value_parser,
-        "i_duration": value_parser
-    }
-
     # Iterate over files in the directory
     for filename in os.listdir(clean_directory_path):
         if filename.endswith(".txt"):
@@ -171,25 +98,35 @@ def run_parser(clean_directory_path):
             # Create a list to store modified lines
             modified_lines = []
 
+            time_keys = ["closing_time", "time_to_peak_current", "i_duration"]
+
             with open(file_path, 'r') as file:
                 lines = file.readlines()
 
                 for line in lines:
-                    # Check for a matching prefix in the dictionary
-                    for prefix, parser_func in parser_functions.items():
-                        if line.startswith(prefix):
+                    if line.startswith("Test Device:"):
+                        # Call the parser function and append the modified line
+                        modified_line = test_device_parser(line)
+                        modified_lines.append(modified_line)
+                        # print(f"{line} --> {modified_line}")
 
-                            # Call the associated parser function and append the modified line
-                            modified_line = parser_func(line)
+                    elif line.lower().startswith("oscillogram:"):
+                        # Call the parser function and append the modified line
+                        modified_line = oscillogram_parser(line)
+                        modified_lines.append(modified_line)
+
+                    for key in time_keys:
+                        if line.lower().startswith(key):
+                            # Call the parser function and append the modified line
+                            modified_line = value_parser(line)
                             modified_lines.append(modified_line)
-                            break  # Stop checking for other prefixes
+                            break  # Stop checking the rest of the keys if a match is found
 
                     else:
-                        # If no match is found, keep the line as it is
+                        # Keep other lines as they are
                         modified_lines.append(line)
 
             # Join the modified lines and save them back to the file
             modified_text = ''.join(modified_lines)
             with open(file_path, 'w') as file:
                 file.write(modified_text)
-

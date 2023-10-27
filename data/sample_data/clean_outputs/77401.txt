@@ -4,16 +4,23 @@ breaker_reset:  Yes
 breaker_continuity:  Yes
 enclosure_fuse_open:  No
 closing_angle(deg):  57 Deg.
-closing_time(us):  2.650 m Sec
+closing_time(ms): 2.65
 peak_current(kA):  8.282 k Amps
-time_to_peak_current(ms):  3.177 m Sec
-i_sq_t(k):  183.4 k Amp^2sec
-i_duration(ms):  6.207 m Sec
-Test Device: Eaton 10kA MAIN w/ Square D 125 Branch
+time_to_peak_current(ms): 3.177
+i_sq_t(kAsqSec):  183.4 k Amp^2sec
+i_duration(ms): 6.207
+main_brand: Eaton
+main_rating: 10
+branch_brand: Square D
+branch_rating: 125
 sample:  Test 5
-oscillogram:   HPL3-77401 
+oscillogram: HPL3-77401
 test_date:  10/4/2023
 time_of_test:   9:18:04 AM
+Osc. No: 59187
+calibration_date: 1/11/2023OCV =  240  V  
+grid_rms_sym_current:  10.12 kA
+power_factor: 49%
 MAIN &  Branch Tripped  
 "CO" to Main
 IntertekWitness: Dipesh Patel

@@ -1,0 +1,25 @@
+C:\Users\ecountrywood\dev\tools\pdf_tools\data\sample_data\pdf_inputs\77439.pdf
+breaker_tripped:  Yes
+breaker_reset:  Yes
+breaker_continuity:  Yes
+enclosure_fuse_open:  No
+closing_angle(deg):  5 Deg.
+closing_time(ms): 0.2294
+peak_current(kA):  11.34 k Amps
+time_to_peak_current(ms): 3.859
+i_sq_t(kAsqSec):  407.7 k Amp^2sec
+i_duration(ms): 6.854
+main_brand: Eaton BWH
+main_rating: 25
+branch_brand: Eaton
+branch_rating: 125
+sample:  4
+oscillogram: HPL3-77439
+test_date:   10/5/2023
+time_of_test:   9:57:30 AM
+Osc. No: 57423
+calibration_date: 10/20/202
+OCV:  244  V  
+grid_rms_sym_current:  25.5 kA
+power_factor: 15%
+Main & Branch BreakerTripped

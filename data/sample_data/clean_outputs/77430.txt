@@ -4,16 +4,24 @@ breaker_reset:  Yes
 breaker_continuity:  Yes
 enclosure_fuse_open:  No
 closing_angle(deg):  239 Deg.
-closing_time(us):  11.06 m Sec
+closing_time(ms): 11.06
 peak_current(kA):  -11.93 k Amps
-time_to_peak_current(ms):  1.971 m Sec
-i_sq_t(k):  326.8 k Amp^2sec
-i_duration(ms):  5.274 m Sec
-Test Device: Eaton BWH 25kA MAIN w/ SIEMENS 125 Branch
+time_to_peak_current(ms): 1.971
+i_sq_t(kAsqSec):  326.8 k Amp^2sec
+i_duration(ms): 5.274
+main_brand: Eaton BWH
+main_rating: 25
+branch_brand: SIEMENS
+branch_rating: 125
 sample:  Test 34
-oscillogram:   HPL3-77430 
+oscillogram: HPL3-77430
 test_date:   10/4/2023
 time_of_test:   2:24:36 PM
+Osc. No: 57423
+calibration_date: 10/20/202
+OCV:  244  V  
+grid_rms_sym_current:  25.5 kA
+power_factor: 15%
 Main & Branch BreakerTripped
 "CO" to Branch
 Intertek Witness: Dipesh Patel

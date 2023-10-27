@@ -1,0 +1,25 @@
+C:\Users\ecountrywood\dev\tools\pdf_tools\data\sample_data\pdf_inputs\77399.pdf
+breaker_tripped:  Yes
+breaker_reset:  Yes
+breaker_continuity:  Yes
+enclosure_fuse_open:  No
+closing_angle(deg):  3 Deg.
+closing_time(ms): 0.1498
+peak_current(kA):  9.858 k Amps
+time_to_peak_current(ms): 4.919
+i_sq_t(kAsqSec):  364.4 k Amp^2sec
+i_duration(ms): 8.577
+main_brand: Eaton
+main_rating: 10
+branch_brand: Eaton
+branch_rating: 125
+sample:  Test 3
+oscillogram: HPL3-77399
+test_date:  10/4/2023
+time_of_test:   8:57:04 AM
+Osc. No: 59187
+calibration_date: 1/11/2023OCV =  240  V  
+grid_rms_sym_current:  10.12 kA
+power_factor: 49%
+MAIN &  Branch Tripped  
+Intertek Witness: Dipesh Patel
