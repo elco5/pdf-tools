@@ -11,19 +11,14 @@ process_clean_files_to_csv(columns, clean_directory_path, results_directory_path
 
 '''
 import os
-import csv
 import re
+import csv
 from datetime import datetime
-
-import config
-
-
-
+import config  
 
 def process_clean_files_to_csv(columns, clean_directory_path, results_directory_path):
     # Create the results directory if it doesn't exist
-    if not os.path.exists(results_directory_path):
-        os.makedirs(results_directory_path)
+    os.makedirs(results_directory_path, exist_ok=True)
 
     # Create a CSV file for the results
     csv_file_path = os.path.join(results_directory_path, "results.csv")
@@ -32,6 +27,41 @@ def process_clean_files_to_csv(columns, clean_directory_path, results_directory_
     with open(csv_file_path, 'w', newline='') as csv_file:
         writer = csv.writer(csv_file)
         writer.writerow(columns)
+
+    # Define a function to extract values
+    def extract_value(line, column) -> None:
+        if column in config.use_raw_column_data:
+            return line.split(':')[1].strip()
+
+
+        match = re.search(r'(\d+/\d+/\d+|\d+:\d+:\d+\s[APap][Mm]|\d+\.\d+|\d+)(?!\^)', line)
+        # # Break it down into separate patterns
+        # date_pattern = r'\d+/\d+/\d+'
+        # time_pattern = r'\d+:\d+:\d+\s[APap][Mm]'
+        # float_pattern = r'\d+\.\d+'
+        # integer_pattern = r'\d+'
+        # match = re.search((date_pattern|time_pattern|float_pattern|integer_pattern)(?!\^)', line)
+
+        if match:
+            extracted_value = match.group()
+            if ":" in extracted_value:
+                try:
+                    time_obj = datetime.strptime(extracted_value, '%I:%M:%S %p')
+                    return time_obj.strftime('%H:%M:%S')
+                except ValueError:
+                    pass
+            elif "/" in extracted_value:
+                try:
+                    date_obj = datetime.strptime(extracted_value, '%m/%d/%Y')
+                    return date_obj.strftime('%m/%d/%Y')
+                except ValueError:
+                    pass
+
+        non_numeric_match = re.search(r'(?<=:)\s*(\S.*)', line)
+        if non_numeric_match:
+            return non_numeric_match.group(1)
+
+        return None
 
     # Iterate through text files in the clean data directory
     for file_name in os.listdir(clean_directory_path):
@@ -46,46 +76,13 @@ def process_clean_files_to_csv(columns, clean_directory_path, results_directory_
                 extracted_value = None
                 for line in lines:
                     if column in line:
-
-                        if column in config.use_raw_column_data:
-                            extracted_value = line.split(':')[1].strip()
+                        extracted_value = extract_value(line, column)
+                        if extracted_value is not None:
                             break
 
-                        match = re.search(r'(\d+/\d+/\d+|\d+:\d+:\d+\s[APap][Mm]|\d+\.\d+|\d+)(?!\^)', line)
-
-                        if match:
-                            extracted_value = match.group()
-                            # Handle date and time format
-                            if ":" in extracted_value:
-                                try:
-                                    time_obj = datetime.strptime(extracted_value, '%I:%M:%S %p')
-                                    extracted_value = time_obj.strftime('%H:%M:%S')
-                                except ValueError:
-                                    pass  # Not a valid time format
-                            elif "/" in extracted_value:
-                                try:
-                                    date_obj = datetime.strptime(extracted_value, '%m/%d/%Y')
-                                    extracted_value = date_obj.strftime('%m/%d/%Y')
-                                except ValueError:
-                                    pass  # Not a valid date format
-                            break
-
-
-
-                if extracted_value is None:
-                    # If no numeric value was found, populate the column with the non-numeric value found
-                    for line in lines:
-                        if column in line:
-                            non_numeric_match = re.search(r'(?<=:)\s*(\S.*)', line)
-                            if non_numeric_match:
-                                extracted_value = non_numeric_match.group(1)
-                            break
                 values.append(extracted_value)
 
             # Append the extracted values to the CSV
             with open(csv_file_path, 'a', newline='') as csv_file:
                 writer = csv.writer(csv_file)
                 writer.writerow(values)
-
-
-

@@ -1,0 +1,23 @@
+                    
+                    
+                    
+                    time_keys = ["closing_time","time_to_peak_current","i_duration"] 
+                    
+                    elif line.lower().startswith(time_keys):
+                        # Call the parser function and append the modified line
+                        modified_line = value_parser(line)
+                        modified_lines.append(modified_line)
+
+
+closing_time(ms):  149.8 µ Sec
+peak_current(kA):  9.858 k Amps
+time_to_peak_current(ms):  4.919 m Sec
+i_sq_t(kAsqSec):  364.4 k Amp^2sec
+i_duration(ms):  8.577 m Sec
+
+I have this code:
+print(f"{line_value} --> {line_value_numeric}")
+but output is:
+  8.577 m Sec
+ --> 8.577
+ Why is --> on a new line?

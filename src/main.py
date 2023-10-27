@@ -9,8 +9,8 @@ import parser
 # Check if the script is being run as the main program
 if __name__ == "__main__":
 
-    pdf_scrape.pdf_scrape(pdf_directory=config.pdf_inputs_path,
-                          raw_output_directory=config.raw_outputs_path)
+    # pdf_scrape.pdf_scrape(pdf_directory=config.pdf_inputs_path,
+    #                       raw_output_directory=config.raw_outputs_path)
 
     # Call the function to make deletions and replacements
     process_raw.clean_raw_pdf_output(dirty_directory_path=config.raw_outputs_path,
